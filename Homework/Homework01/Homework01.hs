@@ -21,9 +21,9 @@ areaOfACircle r = pi * r^2
 -- Question 4
 -- Define a function that calculates the volume of a cylinder by composing the previous function together with the height of the cylinder. 
 
-areaofACylinder r h = (areaOfACircle r) * h
+areaofACylinder r h = areaOfACircle r * h
 
 -- Question 5
 -- Define a function that takes the height and radius of a cylinder and checks if the volume is greater than or equal to 42.
 
-meaningOfLife r h = (areaofACylinder r h) >= 42
+meaningOfLife r h = areaofACylinder r h >= 42
